@@ -1,6 +1,6 @@
-@import '../scss/global';
-@import '../scss/fonts';
-@import '../scss/vars';
+@import '../scss/global.scss';
+@import '../scss/fonts.scss';
+@import '../scss/vars.scss';
 
 // start header
 .header__top {
@@ -389,6 +389,11 @@
     outline: none;
     cursor: pointer;
     z-index: 1;
+    opacity: .7;
+    transition: all .5s;
+    &:hover{
+      opacity: 1;
+    }
   }
 
   .slick-next.slick-arrow {
@@ -486,6 +491,9 @@
   .more {
     color: #a22631;
     display: inline-block;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 
@@ -629,6 +637,9 @@
     &+a{
       margin-left: 30px;
     }
+    &:hover{
+      text-decoration: underline;
+    }
 
     &::before {
       position: absolute;
@@ -645,4 +656,4 @@
 }
 
 // end footer
-@import '../scss/media';
+@import '../scss/media.scss';
